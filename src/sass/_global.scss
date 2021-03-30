@@ -3,3 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+input, button {
+  outline: none;
+}
+
+.section {
+  width: 100%;
+  .container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 24px;
+    max-width: 828px;
+    height: 100%;
+  }
+}
