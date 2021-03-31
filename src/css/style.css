@@ -10,6 +10,10 @@ input, button {
   outline: none;
 }
 
+td, th {
+  padding: 4px;
+}
+
 .section {
   width: 100%;
 }
@@ -39,6 +43,102 @@ input, button {
   src: url(../fonts/tg-cn20.otf);
 }
 /* Components CSS */
+.legal-wrapper {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  width: 100%;
+  max-width: 828px;
+  padding: 0 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "tg-cn18";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 13px;
+  text-transform: uppercase;
+}
+.legal-wrapper .legal-block {
+  border-radius: 12px 0 0 12px;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+.legal-wrapper .legal-block::-webkit-scrollbar {
+  width: 5px;
+}
+.legal-wrapper .legal-block::-webkit-scrollbar-track {
+  background: transparent;
+}
+.legal-wrapper .legal-block::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.7);
+}
+.legal-wrapper .tab-content {
+  overflow: auto;
+  height: 60px;
+  padding: 4px 12px;
+  background: rgba(120, 120, 120, 0.369);
+  box-sizing: border-box;
+}
+.legal-wrapper .tab-content .tab-pane {
+  display: none;
+  min-height: 100%;
+  font-family: "tg-cn18";
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+  opacity: 0.7;
+}
+.legal-wrapper .tab-content .tab-pane.active {
+  display: block;
+}
+.legal-wrapper .tab-content .tab-pane a {
+  color: inherit;
+}
+.legal-wrapper .nav-tabs {
+  margin-top: 8px;
+  padding: 0;
+}
+.legal-wrapper .nav-tabs li {
+  position: relative;
+  display: inline-block;
+  height: 17px;
+  font-family: "tg-cn18";
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.7);
+}
+.legal-wrapper .nav-tabs li:first-child a {
+  padding-left: 0;
+}
+.legal-wrapper .nav-tabs li:last-child::after {
+  opacity: 0;
+}
+.legal-wrapper .nav-tabs li a {
+  padding: 10px 15px;
+  background: none;
+  border: none;
+  color: rgba(0, 0, 0, 0.7);
+  opacity: 0.7;
+  text-decoration: none;
+}
+.legal-wrapper .nav-tabs li.active {
+  font-weight: bold;
+}
+.legal-wrapper .nav-tabs li.active a {
+  color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+}
+.legal-wrapper .nav-tabs li::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0.3;
+}
+
 .navbar_top {
   width: 100%;
   height: 76px;
@@ -278,7 +378,7 @@ input, button {
   flex-wrap: nowrap;
   max-width: 828px;
   width: 100%;
-  height: 100vh;
+  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
   padding: 0 24px;
@@ -354,6 +454,8 @@ input, button {
 }
 
 .body-inicio {
+  position: relative;
+  padding-bottom: 100px;
   background-color: #f1f2f4;
 }
 .body-inicio .intro {
@@ -470,7 +572,7 @@ input, button {
   }
 }
 .body-inicio .historial {
-  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 .body-inicio .historial .wrapper {
   width: 100%;

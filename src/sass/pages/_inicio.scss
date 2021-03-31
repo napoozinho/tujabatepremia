@@ -1,4 +1,8 @@
 .body-inicio {
+  position: relative;
+
+  padding-bottom: 100px;
+
   background-color: $grey-400;
 
   .intro {
@@ -125,7 +129,7 @@
 
   .historial {
 
-    margin-bottom: 32px;
+    padding-bottom: 32px;
     
     .wrapper {
       width: 100%;

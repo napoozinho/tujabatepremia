@@ -1,4 +1,7 @@
 .body-login {
+  // width: 100%;
+  // height: 100vh;
+
   background-color: $blue-500;
   overflow: hidden;
 
@@ -7,7 +10,9 @@
 
     max-width: 828px;
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
+
+    margin-top: 60px;
 
     margin-left: auto;
     margin-right: auto;
