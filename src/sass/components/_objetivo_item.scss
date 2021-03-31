@@ -1,0 +1,201 @@
+.objetivo-item {
+      
+  margin-bottom: 40px;
+
+  h2 {
+    margin-bottom: 24px;
+
+    @include ff-tg-cn20;
+    @include title-l;
+    color: $blue-500;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .datos {
+    @include flex(column, center, center, false);
+
+    max-width: 488px;
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+    .datos_wrapper {
+      @include flex(row, center, stretch, false);
+
+      margin-bottom: 12px;
+
+      .objetivo {
+        @include flex(column, start, center, false);
+
+        width: 200px;
+
+        padding-right: 16px;
+
+        border-right: 1px solid;
+        border-color: $grey-500;
+        cursor: default;
+
+        .titulo {
+          width: 100%;
+
+          margin-bottom: 8px;
+
+          @include ff-tg-cn18;
+          @include body-m;
+          color: $blue-500;
+          text-align: center;
+        }
+
+        .box-objetivo {
+          @include flex(column, center, center, false);
+          align-self: stretch;
+
+          border: 1px solid;
+          border-color: $green-500;
+          border-radius: 10px;
+
+          .paquetesObjetivos {
+            @include ff-tg-cn20;
+            @include title-l;
+            color: $green-500;
+            text-align: center;
+          }
+
+          p {
+            &:last-child {
+              @include ff-tg-cn20;
+              @include body-sm;
+              color: $green-500;
+              text-align: center;
+              transform: translateY(-4px);
+            }
+          }
+        }
+      }
+
+      .comprados {
+        @include flex(column, start, center, false);
+
+        width: 260px;
+
+        padding-left: 16px;
+
+        cursor: default;
+
+        .titulo {
+          width: 100%;
+
+          margin-bottom: 8px;
+
+          @include ff-tg-cn18;
+          @include body-m;
+          color: $blue-500;
+          text-align: center;
+        }
+
+        .box-container {
+          @include flex(row, between, start, false);
+
+          width: 100%;
+
+          .box-comprados {
+            align-self: stretch;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0;
+            @include flex(column, center, center, false);
+
+            margin-right: 16px;
+
+            background-color: $green-500;
+            color: $white;
+            border-radius: 10px;
+
+            &:last-child {
+              margin-right: 0
+            }
+
+            .paquetesComprados {
+              @include ff-tg-cn20;
+              @include title-l;
+              text-align: center;
+
+              &+p {
+                @include ff-tg-cn20;
+                @include body-sm;
+                text-align: center;
+                transform: translateY(-4px);
+              }
+            }
+
+            .bs {
+                @include ff-tg-cn20;
+                @include title-l;
+                text-align: center;
+            }
+          }
+        }
+      }
+    }
+
+    .indicador {
+      align-self: flex-start;
+      @include ff-tg-cn18;
+      @include body-sm;
+      color: $grey-500;
+
+      span {
+        color: $green-500;
+        cursor: default;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .datos_wrapper {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+        .objetivo {
+          margin-bottom: 16px;
+          padding-right: 0;
+          border: none;
+        }
+        .comprados {
+          padding-left: 0;
+        }
+      }
+      .indicador {
+        align-self: center;
+      }
+    }
+    @media (max-width: 480px) {
+      .datos_wrapper {
+
+        .objetivo {
+          width: 100%;
+        }
+
+        .comprados {
+          width: 100%;
+
+          .box-container {
+            flex-direction: column;
+
+            .box-comprados {
+              margin-right: 0;
+              margin-bottom: 12px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

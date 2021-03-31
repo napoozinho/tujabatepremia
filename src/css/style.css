@@ -39,6 +39,232 @@ input, button {
   src: url(../fonts/tg-cn20.otf);
 }
 /* Components CSS */
+.navbar_top {
+  width: 100%;
+  height: 76px;
+  padding: 0 24px;
+  background-color: #9aeedd;
+}
+.navbar_top div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+  max-width: 780px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.objetivo-item {
+  margin-bottom: 40px;
+}
+.objetivo-item h2 {
+  margin-bottom: 24px;
+  font-family: "tg-cn20";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  color: #246fa9;
+  text-transform: uppercase;
+  text-align: center;
+}
+.objetivo-item .datos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  max-width: 488px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.objetivo-item .datos .datos_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  margin-bottom: 12px;
+}
+.objetivo-item .datos .datos_wrapper .objetivo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 200px;
+  padding-right: 16px;
+  border-right: 1px solid;
+  border-color: #848484;
+  cursor: default;
+}
+.objetivo-item .datos .datos_wrapper .objetivo .titulo {
+  width: 100%;
+  margin-bottom: 8px;
+  font-family: "tg-cn18";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #246fa9;
+  text-align: center;
+}
+.objetivo-item .datos .datos_wrapper .objetivo .box-objetivo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-self: stretch;
+  border: 1px solid;
+  border-color: #0ed5ae;
+  border-radius: 10px;
+}
+.objetivo-item .datos .datos_wrapper .objetivo .box-objetivo .paquetesObjetivos {
+  font-family: "tg-cn20";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  color: #0ed5ae;
+  text-align: center;
+}
+.objetivo-item .datos .datos_wrapper .objetivo .box-objetivo p:last-child {
+  font-family: "tg-cn20";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0ed5ae;
+  text-align: center;
+  transform: translateY(-4px);
+}
+.objetivo-item .datos .datos_wrapper .comprados {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 260px;
+  padding-left: 16px;
+  cursor: default;
+}
+.objetivo-item .datos .datos_wrapper .comprados .titulo {
+  width: 100%;
+  margin-bottom: 8px;
+  font-family: "tg-cn18";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #246fa9;
+  text-align: center;
+}
+.objetivo-item .datos .datos_wrapper .comprados .box-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.objetivo-item .datos .datos_wrapper .comprados .box-container .box-comprados {
+  align-self: stretch;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-right: 16px;
+  background-color: #0ed5ae;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.objetivo-item .datos .datos_wrapper .comprados .box-container .box-comprados:last-child {
+  margin-right: 0;
+}
+.objetivo-item .datos .datos_wrapper .comprados .box-container .box-comprados .paquetesComprados {
+  font-family: "tg-cn20";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+}
+.objetivo-item .datos .datos_wrapper .comprados .box-container .box-comprados .paquetesComprados + p {
+  font-family: "tg-cn20";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  transform: translateY(-4px);
+}
+.objetivo-item .datos .datos_wrapper .comprados .box-container .box-comprados .bs {
+  font-family: "tg-cn20";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+}
+.objetivo-item .datos .indicador {
+  align-self: flex-start;
+  font-family: "tg-cn18";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #848484;
+}
+.objetivo-item .datos .indicador span {
+  color: #0ed5ae;
+  cursor: default;
+}
+@media (max-width: 768px) {
+  .objetivo-item .datos .datos_wrapper {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .objetivo-item .datos .datos_wrapper .objetivo {
+    margin-bottom: 16px;
+    padding-right: 0;
+    border: none;
+  }
+  .objetivo-item .datos .datos_wrapper .comprados {
+    padding-left: 0;
+  }
+  .objetivo-item .datos .indicador {
+    align-self: center;
+  }
+}
+@media (max-width: 480px) {
+  .objetivo-item .datos .datos_wrapper .objetivo {
+    width: 100%;
+  }
+  .objetivo-item .datos .datos_wrapper .comprados {
+    width: 100%;
+  }
+  .objetivo-item .datos .datos_wrapper .comprados .box-container {
+    flex-direction: column;
+  }
+  .objetivo-item .datos .datos_wrapper .comprados .box-container .box-comprados {
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+  .objetivo-item .datos .datos_wrapper .comprados .box-container .box-comprados:last-child {
+    margin-bottom: 0;
+  }
+}
+
 /* Pages CSS */
 .body-login {
   background-color: #246fa9;
@@ -125,6 +351,167 @@ input, button {
   cursor: pointer;
   transform: translateY(-4px);
   box-shadow: 0px 4px 10px #848484;
+}
+
+.body-inicio {
+  background-color: #f1f2f4;
+}
+.body-inicio .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  max-width: 828px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 24px;
+  text-align: center;
+}
+.body-inicio .intro h2 {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-family: "tg-cn18";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #848484;
+  text-transform: uppercase;
+}
+.body-inicio .intro h1 {
+  margin-bottom: 8px;
+  font-family: "tg-cn20";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  color: #246fa9;
+  text-transform: uppercase;
+}
+.body-inicio .intro p {
+  margin-bottom: 8px;
+  font-family: "tg-cn18";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #848484;
+}
+.body-inicio .intro p:last-child {
+  margin-bottom: 20px;
+}
+.body-inicio .objetivos {
+  width: 100%;
+  max-width: 828px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
+  padding: 0px 24px;
+}
+.body-inicio .objetivos .objetivos-wrapper {
+  width: 100%;
+  padding: 32px 24px 20px 24px;
+  background-color: white;
+  border-radius: 10px;
+}
+.body-inicio .objetivos .objetivos-wrapper .separador {
+  height: 5px;
+  margin-bottom: 28px;
+  background-color: #0ed5ae;
+}
+.body-inicio .objetivos .objetivos-wrapper .informacion {
+  width: 100%;
+}
+.body-inicio .objetivos .objetivos-wrapper .informacion .item {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.body-inicio .objetivos .objetivos-wrapper .informacion .item:last-child {
+  margin-bottom: 0;
+}
+.body-inicio .objetivos .objetivos-wrapper .informacion .item .titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 12px;
+}
+.body-inicio .objetivos .objetivos-wrapper .informacion .item .titulo svg {
+  flex-shrink: 0;
+  margin-right: 12px;
+}
+.body-inicio .objetivos .objetivos-wrapper .informacion .item .titulo h3 {
+  font-family: "tg-cn20";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #246fa9;
+}
+.body-inicio .objetivos .objetivos-wrapper .informacion .item p {
+  margin-left: 44px;
+  margin-bottom: 8px;
+  font-family: "tg-cn18";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.body-inicio .objetivos .objetivos-wrapper .informacion .item p:last-child {
+  margin-bottom: 0px;
+}
+@media (max-width: 480px) {
+  .body-inicio .objetivos .objetivos-wrapper .informacion .item p {
+    margin-left: 0;
+  }
+}
+.body-inicio .historial {
+  margin-bottom: 32px;
+}
+.body-inicio .historial .wrapper {
+  width: 100%;
+  max-width: 828px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 24px;
+}
+.body-inicio .historial .wrapper a {
+  text-decoration: none;
+}
+.body-inicio .historial .wrapper a div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 20px 28px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.body-inicio .historial .wrapper a div p {
+  font-family: "tg-cn20";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #246fa9;
+}
+@media (max-width: 480px) {
+  .body-inicio .historial .wrapper a div p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+.body-inicio .historial .wrapper a div svg {
+  margin-left: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.body-inicio .historial .wrapper a div:hover svg {
+  transform: translateX(4px);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,176 @@
+.body-inicio {
+  background-color: $grey-400;
+
+  .intro {
+    @include flex(column, start, center, false);
+
+    max-width: 828px;
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 24px;
+
+    text-align: center;
+
+    h2 {
+      margin-top: 24px;
+      margin-bottom: 8px;
+
+      @include ff-tg-cn18;
+      @include body-m;
+      color: $grey-500;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+
+      @include ff-tg-cn20;
+      @include title-l;
+      color: $blue-500;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-bottom: 8px;
+
+      @include ff-tg-cn18;
+      @include body-m;
+      color: $grey-500;
+
+      &:last-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .objetivos {
+    width: 100%;
+    max-width: 828px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
+    padding: 0px 24px;
+    
+    .objetivos-wrapper {
+      width: 100%;
+
+      padding: 32px 24px 20px 24px;
+
+      background-color: white;
+      border-radius: 10px;
+
+      // FROM '_objetivo_item.scss'
+      // objetivo_item {}
+
+      .separador {
+        height: 5px;
+
+        margin-bottom: 28px;
+
+        background-color: $green-500;
+      }
+
+      .informacion {
+        width: 100%;
+
+        .item {
+          width: 100%;
+
+          margin-bottom: 32px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .titulo {
+            @include flex(row, start, center, false);
+
+            margin-bottom: 12px;
+
+            svg {
+              flex-shrink: 0;
+              margin-right: 12px;
+            }
+
+            h3 {
+              @include ff-tg-cn20;
+              @include title-m;
+              color: $blue-500;
+            }
+          }
+
+          p {
+            margin-left: 44px;
+            margin-bottom: 8px;
+
+            &:last-child {
+              margin-bottom: 0px;
+            }
+
+            @include ff-tg-cn18;
+            @include body-m;
+            color: $black;
+
+            @media (max-width: 480px) {
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .historial {
+
+    margin-bottom: 32px;
+    
+    .wrapper {
+      width: 100%;
+      max-width: 828px;
+
+      margin-left: auto;
+      margin-right: auto;
+
+      padding: 0 24px;
+
+      a {
+        text-decoration: none;
+
+        div {
+          @include flex(row, between, center, false);
+
+          padding: 20px 28px;
+
+          background-color: $white;
+          border-radius: 10px;
+
+          p {
+            @include ff-tg-cn20;
+            @include title-m;
+            color: $blue-500;
+
+            @media (max-width: 480px) {
+              @include title-sm;
+            }
+          }
+
+          svg {
+            margin-left: 20px;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover {
+            svg {
+              transform: translateX(4px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

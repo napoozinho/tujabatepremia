@@ -9,6 +9,9 @@
 @import "typography.scss";
 
 /* Components CSS */
+@import "components/navbar_top.scss";
+@import "components/objetivo_item.scss";
 
 /* Pages CSS */
 @import "pages/login.scss";
+@import "pages/inicio.scss";
