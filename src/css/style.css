@@ -66,6 +66,7 @@ td, th {
 }
 .legal-wrapper .legal-block::-webkit-scrollbar {
   width: 5px;
+  height: 5px;
 }
 .legal-wrapper .legal-block::-webkit-scrollbar-track {
   background: transparent;
@@ -75,7 +76,7 @@ td, th {
 }
 .legal-wrapper .tab-content {
   overflow: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
   height: 60px;
   padding: 4px 12px;
   background: rgba(120, 120, 120, 0.369);

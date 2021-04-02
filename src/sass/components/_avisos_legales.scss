@@ -19,6 +19,7 @@
     /* width */
     &::-webkit-scrollbar {
       width: 5px;
+      height: 5px;
     }
     /* Track */
     &::-webkit-scrollbar-track {
@@ -32,7 +33,7 @@
 
   .tab-content {
     overflow: auto;
-    overflow-x: hidden;
+    overflow-x: auto;
 
     height: 60px;
 
