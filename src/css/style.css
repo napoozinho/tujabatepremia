@@ -364,6 +364,9 @@ td, th {
     margin-bottom: 0;
   }
 }
+.objetivo-item.red .datos .datos_wrapper .comprados .box-comprados {
+  background-color: #ef3d3d;
+}
 
 .mes {
   position: relative;
@@ -738,6 +741,196 @@ td, th {
   margin-left: auto;
   margin-right: auto;
   padding: 0 24px;
+}
+
+.body-detalle_mes {
+  position: relative;
+  padding-bottom: 130px;
+  background-color: #f1f2f4;
+  min-height: 100vh;
+  height: 100%;
+}
+.body-detalle_mes .intro {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 52px;
+  margin-bottom: 20px;
+  padding: 0 24px;
+}
+.body-detalle_mes .intro h1 {
+  width: 100%;
+  font-family: "tg-cn20";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  color: #246fa9;
+  text-align: center;
+  text-transform: uppercase;
+}
+.body-detalle_mes .mes_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  max-width: 828px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 24px;
+}
+.body-detalle_mes .mes_wrapper .mes_historial {
+  position: relative;
+  width: 100%;
+  padding: 24px 48px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.body-detalle_mes .mes_wrapper .mes_historial a svg {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.body-detalle_mes .mes_wrapper .mes_historial a svg:hover {
+  transform: scale(1.1);
+}
+.body-detalle_mes .mes_wrapper .mes_historial h2 {
+  font-family: "tg-cn18";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  color: #246fa9;
+}
+.body-detalle_mes .mes_wrapper .mes_historial h2 + p {
+  margin-bottom: 12px;
+  font-family: "tg-cn18-obl";
+  font-style: normal;
+  font-weight: normal;
+}
+.body-detalle_mes .mes_wrapper .mes_historial p {
+  font-family: "tg-cn18";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+}
+@media (max-width: 580px) {
+  .body-detalle_mes .mes_wrapper .mes_historial p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.body-detalle_mes .mes_wrapper .mes_historial .historial_wrapper {
+  width: 100%;
+  margin-bottom: 28px;
+}
+.body-detalle_mes .mes_wrapper .mes_historial .historial_wrapper .row {
+  display: grid;
+  grid-template-columns: 85px 2fr 1fr;
+  margin-bottom: 12px;
+  padding: 0px 12px;
+}
+.body-detalle_mes .mes_wrapper .mes_historial .historial_wrapper .row.hidden {
+  display: none;
+}
+.body-detalle_mes .mes_wrapper .mes_historial .historial_wrapper .row p:first-child {
+  margin-right: 20px;
+  font-family: "tg-cn18-obl";
+  font-style: normal;
+  font-weight: normal;
+}
+.body-detalle_mes .mes_wrapper .mes_historial .historial_wrapper .row p:last-child {
+  padding-left: 28px;
+}
+.body-detalle_mes .mes_wrapper .mes_historial .historial_wrapper .row.header {
+  margin-bottom: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #848484;
+}
+.body-detalle_mes .mes_wrapper .mes_historial .historial_wrapper .row.header p:first-child {
+  font-family: "tg-cn18";
+  font-style: normal;
+  font-weight: normal;
+  border-right: 1px solid;
+  border-color: #848484;
+}
+.body-detalle_mes .mes_wrapper .mes_historial .historial_wrapper .row.header p:last-child {
+  border-left: 1px solid;
+  border-color: #848484;
+}
+.body-detalle_mes .mes_wrapper .mes_historial .historial_wrapper::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+.body-detalle_mes .mes_wrapper .mes_historial .historial_wrapper::-webkit-scrollbar:vertical {
+  width: 12px;
+}
+.body-detalle_mes .mes_wrapper .mes_historial .historial_wrapper::-webkit-scrollbar:horizontal {
+  height: 12px;
+}
+.body-detalle_mes .mes_wrapper .mes_historial .historial_wrapper::-webkit-scrollbar-thumb {
+  background-color: #848484;
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+}
+.body-detalle_mes .mes_wrapper .mes_historial .historial_wrapper::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+@media (max-width: 500px) {
+  .body-detalle_mes .mes_wrapper .mes_historial .historial_wrapper {
+    overflow-x: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  }
+  .body-detalle_mes .mes_wrapper .mes_historial .historial_wrapper .row {
+    width: 395px;
+    border-bottom: 1px solid;
+    border-color: #f1f2f4;
+  }
+}
+.body-detalle_mes .mes_wrapper .mes_historial .loadMore {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: fit-content;
+  margin: auto;
+  cursor: pointer;
+}
+.body-detalle_mes .mes_wrapper .mes_historial .loadMore.hidden {
+  display: none;
+}
+.body-detalle_mes .mes_wrapper .mes_historial .loadMore h3 {
+  margin-bottom: 4px;
+  font-family: "tg-cn20";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #246fa9;
+  transition: all 0.3s ease-in-out;
+}
+.body-detalle_mes .mes_wrapper .mes_historial .loadMore svg {
+  transition: all 0.3s ease-in-out;
+}
+.body-detalle_mes .mes_wrapper .mes_historial .loadMore:hover h3 {
+  transform: scale(1.1);
+}
+.body-detalle_mes .mes_wrapper .mes_historial .loadMore:hover svg {
+  transform: translateY(8px);
+}
+@media (max-width: 580px) {
+  .body-detalle_mes .mes_wrapper .mes_historial {
+    padding-left: 16px;
+    padding-right: 24px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

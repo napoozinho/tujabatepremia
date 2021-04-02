@@ -198,4 +198,16 @@
       }
     }
   }
+
+  &.red {
+    .datos {
+      .datos_wrapper {
+        .comprados {
+          .box-comprados {
+            background-color: $red-500;
+          }
+        }
+      }
+    }
+  }
 }
